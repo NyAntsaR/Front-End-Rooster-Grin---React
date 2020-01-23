@@ -25,7 +25,7 @@ class SectionTwo extends Component {
                             <div class="row">
                                 <div class="col-lg-6 nopadding">
                                     <div class="container" id={styles.text}>
-                                    <h2 className={styles.header}>Lorem ipsum</h2>
+                                        <h2 className={styles.header}>Lorem ipsum</h2>
                                         <button 
                                             type="button" 
                                             className="btn btn-dark" 

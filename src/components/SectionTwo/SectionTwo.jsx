@@ -112,7 +112,7 @@ class SectionTwo extends Component {
                 <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="container" style={{margin: "40px 9px 30px 30px", height:'230px', padding: "25px"}}>
+                                <div className="container" style={{margin: "40px 9px 30px 30px", height:'350px', padding: "25px"}}>
                                     <h2 className={styles.header} style={{fontSize: "20px"}}>Lorem ipsum</h2>
                                     <ReadMore 
                                         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. 

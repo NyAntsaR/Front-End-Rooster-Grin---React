@@ -181,7 +181,7 @@ class SectionFour extends Component {
                 <div className="container">
                         <div className="row">
                             <div className="col-lg-6">
-                                <div className="container" id={styles.text} style={{height: "330px", width: "400px"}}>
+                                <div className="container" style={{margin: "40px 9px 30px 30px", height:'350px', padding: "25px"}}>
                                     <h2 className={styles.header} style={{fontSize:"25px"}}>Lorem ipsum <br></br> dolor sit amet</h2>
 
                                     <ReadMore 
