@@ -16,10 +16,6 @@ const Mobile = ({ children }) => {
     const isMobile = useMediaQuery({ maxWidth: 767 })
     return isMobile ? children : null
 }
-const Default = ({ children }) => {
-    const isNotMobile = useMediaQuery({ minWidth: 768 })
-    return isNotMobile ? children : null
-}
 
 class Header extends Component {
     render () {
@@ -58,8 +54,8 @@ class Header extends Component {
                             </div>
                 
                             <div>
-                                <h1 className={styles.main} style={{fontSize: '35px', padding: "100px 0px 5px 0px"}}>Welcome to</h1> <br></br>
-                                <p style={{ fontFamily: "Space Mono", color: "#fff", fontSize: "25px"}}>
+                                <h1 className={styles.main} style={{fontSize: '30px', padding: "100px 0px 5px 0px"}}>Welcome to</h1> <br></br>
+                                <p style={{ fontFamily: "Space Mono", color: "#fff", fontSize: "20px"}}>
                                     <Typical
                                         loop={true}
                                         wrapper="b"
