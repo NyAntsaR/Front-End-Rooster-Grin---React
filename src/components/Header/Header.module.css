@@ -18,6 +18,8 @@
 
 #headerButton {
     background-color: #BA55D3;
+    border: none;
+    border-radius: 2px;
 
 }
 

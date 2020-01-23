@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import image from '../../image/banner-1.jpg';
+import styles from '../SectionThree/SectionThree.module.css'
 
 const Desktop = ({ children }) => {
     const isDesktop = useMediaQuery({ minWidth: 992 })
@@ -20,20 +20,81 @@ class SectionTwo extends Component {
         return (
             <>
                 <Desktop>
-                    <div>
-
+                    <div class="container">
+                        <div className={styles.bg} >
+                            <div class="row">
+                                <div class="col-lg-6 nopadding">
+                                    <div class="container" id={styles.text}>
+                                    <h2 className={styles.header}>Lorem ipsum</h2>
+                                        <button 
+                                            type="button" 
+                                            className="btn btn-dark" 
+                                            style={{
+                                                backgroundColor:"#FF8C00", 
+                                                border:"none", 
+                                                borderRadius:"2px",
+                                            }}
+                                        >
+                                            BUTTON BUTTON
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Desktop>
 
                 <Tablet>
-                    <div>
-
+                    <div class="container">
+                        <div className={styles.bg} >
+                            <div class="row">
+                                <div class="col-lg-6 nopadding">
+                                    <div class="container" id={styles.text}>
+                                    <h2 className={styles.header} style={{fontSize:"25px"}}>Lorem ipsum</h2>
+                                        <button 
+                                            type="button" 
+                                            className="btn btn-dark" 
+                                            style={{
+                                                backgroundColor:"#FF8C00", 
+                                                border:"none", 
+                                                borderRadius:"2px",
+                                                fontSize:"10px",
+                                                widht: "300px"
+                                            }}
+                                        >
+                                            BUTTON BUTTON
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Tablet>
 
                 <Mobile>
-                    <div>
-
+                    <div class="container">
+                        <div className={styles.bgMobile} >
+                            <div class="row">
+                                <div class="col-lg-6 nopadding">
+                                    <div class="container" id={styles.text}>
+                                    <h2 className={styles.header} style={{fontSize:"25px"}}>Lorem ipsum</h2>
+                                        <button 
+                                            type="button" 
+                                            className="btn btn-dark" 
+                                            style={{
+                                                backgroundColor:"#FF8C00", 
+                                                border:"none", 
+                                                borderRadius:"2px",
+                                                fontSize:"10px",
+                                                widht: "300px"
+                                            }}
+                                        >
+                                            BUTTON BUTTON
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Mobile>
             </>

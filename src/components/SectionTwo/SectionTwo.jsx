@@ -42,7 +42,7 @@ class SectionTwo extends Component {
         return (
             <>
                 <Desktop>
-                    <div className="container">
+                    <div className="container" style={{height: "400px"}}>
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="container" id={styles.text}>

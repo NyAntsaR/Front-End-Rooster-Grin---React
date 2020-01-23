@@ -1,0 +1,29 @@
+/*-----DESKTOP----*/
+.bg{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-image: url('../../image/banner-1.jpg');
+    position: relative;
+}
+
+
+#text{
+    margin: 150px 0px 0px 50px;;
+    width: 400px;
+    height: 160px;
+}
+
+.header{
+    text-transform: uppercase;
+    color: #663399;
+    font-family: 'Dosis', sans-serif;
+}
+
+/*-----MOBILE----*/
+.bgMobile{
+    width: 100%;
+    background-size: cover;
+    background-image: url('../../image/bannerMobile-1.jpg');
+    position: relative;
+}
