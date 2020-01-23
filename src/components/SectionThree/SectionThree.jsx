@@ -20,7 +20,7 @@ class SectionTwo extends Component {
         return (
             <>
                 <Desktop>
-                    <div class="container">
+                    <div className="container">
                         <div className={styles.bg} >
                             <div class="row">
                                 <div class="col-lg-6 nopadding">
@@ -45,7 +45,7 @@ class SectionTwo extends Component {
                 </Desktop>
 
                 <Tablet>
-                    <div class="container">
+                    <div className="container">
                         <div className={styles.bg} >
                             <div class="row">
                                 <div class="col-lg-6 nopadding">
@@ -72,7 +72,7 @@ class SectionTwo extends Component {
                 </Tablet>
 
                 <Mobile>
-                    <div class="container">
+                    <div className="container">
                         <div className={styles.bgMobile} >
                             <div class="row">
                                 <div class="col-lg-6 nopadding">
