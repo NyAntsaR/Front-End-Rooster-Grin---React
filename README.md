@@ -66,3 +66,29 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+---------------------------------------------------------------------------------------------------
+## Description
+------
+
+The goal of this project is to create a client website that has some key features requested by the client (i.e. Rooster Grin as the client).
+
+## Technology
+------
+
+- HTML
+- CSS
+- JavaScript
+- React.js
+
+###### Framework
+- Bootstrap
+
+###### Third Party
+- Google Font
+- Font Awesome
+
+###### Deployment:
+- Heroku
+
+Here is the [Link](http://front-end-react.herokuapp.com/)
