@@ -1,0 +1,45 @@
+
+#text{
+    margin: 50px 0px 0px 50px;;
+    width: 400px;
+    height: 200px;
+}
+
+.pColor {
+    color: #663399;
+    text-align: center;
+}
+
+#bullet {
+    padding: 7% 15%;
+}
+
+#checked {
+    color: #FF8C00;
+    letter-spacing: 5px;
+}
+
+.header{
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+
+#textTablet{
+    margin: 50px 0px 0px 50px;;
+    width: 400px;
+    height: 130px;
+}
+
+#bulletTablet {
+    padding: 0% 10%;
+}
+
+#textMobile{
+    margin: 50px 0px 0px 50px;;
+    width: 400px;
+    height: 130px;
+}
+
+#bulletTablet {
+    padding: 0% 5%;
+}
