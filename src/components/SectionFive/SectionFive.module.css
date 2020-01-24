@@ -3,8 +3,28 @@
     width: 100%;
     height: 400px;
     background-size: cover;
-    background-image: url('../../image/banner-2.jpg');
     position: relative;
+    background-image: url('../../image/banner-2.jpg');
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
+    animation: myfirst 5s ;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
 }
 
 #text{
