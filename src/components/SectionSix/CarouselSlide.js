@@ -1,186 +1,45 @@
 import React from "react";
-import Slider from "react-slick";
-import styles from './SectionSix.module.css'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useMediaQuery } from 'react-responsive';
+import Slider from "react-animated-slider";
+import "react-animated-slider/build/horizontal.css";
+import "normalize.css/normalize.css";
+import "./slider-animations.css";
+import "./styles.css";
 
+const content = [
+    {
+        title: "Julia Micheal 10/10/2019",
+        description:
+            "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis."
+    },
+    {
+        title: "John Doe 08/08/2019",
+        description:
+            "Nam vel voluptatum, porro neque error, nemo unde odio aspernatur, quae ad corrupti minima maiores? Deserunt id rem inventore laboriosam voluptates placeat."
+    },
+    {
+        title: "Capucine Aurane 01/01/2020",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel voluptatum, porro neque error, nemo unde odio aspernatur, quae ad corrupti minima maiores? Deserunt id rem inventore laboriosam voluptates placeat."
+    },
+  ];
 
-// function SampleNextArrow(props) {
-//     const { className, style, onClick } = props;
-//     return (
-//       <div
-//         className={className}
-//         style={{ ...style, <i class="fa fa-arrow-right"></i> }}
-//         onClick={onClick}
-//       />
-//     );
-// }
+  const CarouselSlide = () => (
+    <div>
+        <Slider className="slider-wrapper">
+        {content.map((item, index) => (
+            <div
+            key={index}
+            className="slider-content"
+            style={{ background: `url('${item.image}') no-repeat center center` }}
+            >
+            <div className="inner">
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+            </div>
+            </div>
+        ))}
+        </Slider>
+    </div>
+  )
 
-
-const Desktop = ({ children }) => {
-    const isDesktop = useMediaQuery({ minWidth: 992 })
-    return isDesktop ? children : null
-}
-const Tablet = ({ children }) => {
-    const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 })
-    return isTablet ? children : null
-}
-const Mobile = ({ children }) => {
-    const isMobile = useMediaQuery({ maxWidth: 767 })
-    return isMobile ? children : null
-}
-
-class SimpleSlider extends React.Component {
-  render() {
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        swipeToSlide: true
-        // nextArrow: '<i class="fa fa-arrow-right"></i>',
-        // prevArrow: '<i class="fa fa-arrow-left"></i>'
-    };
-
-    return (
-    <>
-            <Desktop>
-                <Slider{...settings}>
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div> 
-                </Slider>
-            </Desktop>
-            
-            <Tablet>
-                <Slider{...settings}>
-                    <div className="carousel-item active" id={styles.bulletTablet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-                    
-                </Slider>
-            </Tablet>
-
-            <Mobile>
-                <Slider{...settings}>
-                    <div className="carousel-item active" id={styles.bulletMobile}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div>
-
-                    <div className="carousel-item active" id={styles.bullet}>
-                        <p className={styles.pColor}>John Doe 08/08/2019</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Nobis quis deserunt eligendi error similique obcaecati animi 
-                            nam eum laborum a nostrum, ullam, at ab dolorem veritatis 
-                            vel blanditiis. Est, voluptates?
-                        </p>
-                    </div> 
-                </Slider>
-            </Mobile>
-        </>
-    );
-  }
-}
-
-export default SimpleSlider;
+  export default CarouselSlide;

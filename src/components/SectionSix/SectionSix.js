@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styles from '../SectionSix/SectionSix.module.css'
 import { useMediaQuery } from 'react-responsive';
-import SimpleSlider from './CarouselSlide';
+import CarouselSlide from './CarouselSlide';
+import { Carousel } from 'react-responsive-carousel';
 
 // import CarouselSlide from './CarouselSlide';
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -42,9 +43,7 @@ class SectionSix extends Component {
                             </div>
 
                             <div class="col-lg-6 nopadding">
-
-                                {/* <CarouselSlide /> */}
-                                <SimpleSlider />
+                                <CarouselSlide />
                             </div>
                         </div>
                     </div>
@@ -54,7 +53,7 @@ class SectionSix extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 nopadding">
-                                <div className="container" id={styles.textTable}>
+                                <div className="container" id={styles.textTablet}>
                                     <h2 className={styles.header}>Lorem ipsum <br></br> dolor sit amet</h2>
                                     <span className="fa fa-star" id={styles.checked}></span>
                                     <span className="fa fa-star" id={styles.checked}></span>
@@ -65,9 +64,7 @@ class SectionSix extends Component {
                             </div>
 
                             <div class="col-lg-6 nopadding">
-
-                                {/* <CarouselSlide /> */}
-                                <SimpleSlider />
+                                <CarouselSlide />
                             </div>
                         </div>
                     </div>
@@ -88,9 +85,7 @@ class SectionSix extends Component {
                             </div>
 
                             <div class="col-lg-6 nopadding">
-
-                                {/* <CarouselSlide /> */}
-                                <SimpleSlider />
+                                <CarouselSlide />
                             </div>
                         </div>
                     </div>

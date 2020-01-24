@@ -2,7 +2,6 @@
 #text{
     margin: 50px 0px 0px 50px;;
     width: 400px;
-    height: 200px;
 }
 
 .pColor {
@@ -27,7 +26,7 @@
 #textTablet{
     margin: 50px 0px 0px 50px;;
     width: 400px;
-    height: 130px;
+    height: 25px;
 }
 
 #bulletTablet {
@@ -37,9 +36,8 @@
 #textMobile{
     margin: 50px 0px 0px 50px;;
     width: 400px;
-    height: 130px;
+    height: 10px;
 }
 
-#bulletTablet {
-    padding: 0% 5%;
-}
+
+  
