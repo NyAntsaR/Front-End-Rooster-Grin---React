@@ -54,7 +54,7 @@ class SectionSix extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 nopadding">
-                                <div className="container" id={styles.textTablet}>
+                                <div className="container" id={styles.textTable}>
                                     <h2 className={styles.header}>Lorem ipsum <br></br> dolor sit amet</h2>
                                     <span className="fa fa-star" id={styles.checked}></span>
                                     <span className="fa fa-star" id={styles.checked}></span>
